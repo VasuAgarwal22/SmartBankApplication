@@ -1,8 +1,7 @@
-package org.example;
+package org.example.entity;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
-import java.time.LocalTime;
 import java.util.List;
 
 @Entity

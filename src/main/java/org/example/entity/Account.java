@@ -1,4 +1,4 @@
-package org.example;
+package org.example.entity;
 
 import jakarta.persistence.*;
 
@@ -40,7 +40,7 @@ public class Account {
     public double getBalance() {
         return balance;
     }
-    public void setBalance(int balance) {
+    public void setBalance(double balance) {
         this.balance = balance;
     }
     public LocalDateTime getCreatedAt() {
@@ -55,6 +55,31 @@ public class Account {
     public void setStatus(String status) {
         Status = status;
     }
+
+    public List<Transaction> getTransactions() {
+        return transactions;
+    }
+
+    public void setTransactions(List<Transaction> transactions) {
+        this.transactions = transactions;
+    }
+
+    public CardATM getCardATM() {
+        return cardATM;
+    }
+
+    public void setCardATM(CardATM cardATM) {
+        this.cardATM = cardATM;
+    }
+
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
+    }
+
     @Override
     public String toString() {
         return "Account{" +

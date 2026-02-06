@@ -1,4 +1,4 @@
-package org.example;
+package org.example.entity;
 
 import jakarta.persistence.*;
 
@@ -10,21 +10,17 @@ public class Transaction {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int txnId;
     private String txnType;
-    private int Amount;
+    private double Amount;
     private LocalDateTime DateTime;
     private String Remarks;
-
     @ManyToOne
     @JoinColumn(name = "account_number")
     private Account account;
 
-    @ManyToOne
-    @JoinColumn(name = "")
-
-    public int getAmount() {
+    public double getAmount() {
         return Amount;
     }
-    public void setAmount(int amount) {
+    public void setAmount(double amount) {
         Amount = amount;
     }
     public LocalDateTime getDateTime() {
@@ -50,6 +46,14 @@ public class Transaction {
     }
     public void setTxnType(String txnType) {
         this.txnType = txnType;
+    }
+
+    public Account getAccount() {
+        return account;
+    }
+
+    public void setAccount(Account account) {
+        this.account = account;
     }
 
     @Override

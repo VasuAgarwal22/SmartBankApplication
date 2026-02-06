@@ -11,11 +11,12 @@
         <property name="hibernate.show_sql">true</property>
 <!--        <property name="hibernate.format_sql">true</property>-->
 
-        <mapping class="org.example.Customer"/>
-        <mapping class="org.example.Account"/>
-<!--        <mapping class="org.example.Branch"/>-->
-        <mapping class="org.example.CardATM"/>
-        <mapping class="org.example.Transaction"/>
+        <mapping class="org.example.entity.Customer"/>
+        <mapping class="org.example.entity.Account"/>
+<!--        <mapping class="org.example.entity.Branch"/>-->
+        <mapping class="org.example.entity.CardATM"/>
+        <mapping class="org.example.entity.Transaction"/>
+
 
     </session-factory>
 </hibernate-configuration>
