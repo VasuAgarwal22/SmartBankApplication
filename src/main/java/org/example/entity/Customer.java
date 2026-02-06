@@ -76,6 +76,23 @@ public class Customer {
     public void setPhoneNumber(String phoneNumber) {
         PhoneNumber = phoneNumber;
     }
+
+    public List<Account> getAccounts() {
+        return accounts;
+    }
+
+    public void setAccounts(List<Account> accounts) {
+        this.accounts = accounts;
+    }
+
+    public int getCustomerId() {
+        return customerId;
+    }
+
+    public void setCustomerId(int customerId) {
+        this.customerId = customerId;
+    }
+
     @Override
     public String toString() {
         return "Customer{" +
